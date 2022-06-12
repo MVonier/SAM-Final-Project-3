@@ -15,21 +15,15 @@
   margin-left: -122.0px;
   margin-top: -194px;
   position: relative;
-  width: 668px;
+  width: 375px;
   z-index: 1;
 }
 
-.events .overlap-group-2 {
-  height: 522px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 668px;
-}
+
 
 .events .rectangle-83 {
   height: 120px;
-  left: 125px;
+  left: 122px;
   position: absolute;
   top: 296px;
   width: 375px;
@@ -146,6 +140,7 @@
   flex-direction: column;
   left: 145px;
   min-height: 349px;
+  margin-top: 50px;
   padding: 13px 0;
   position: absolute;
   top: 379px;
@@ -621,21 +616,32 @@
 
 .events .header-1 {
   align-items: flex-start;
+  align-self: center;
+  z-index: 2;
+  
+  justify-content: flex-end;
+
   display: flex;
   height: 107px;
-  left: 0;
-  min-width: 377px;
+  display: flex;
+  flex-direction: column;
+  min-height: 107px;
   padding: 0 0.0px;
-  position: fixed;
+  position: absolute;
   top: -1px;
-  z-index: 4;
 }
 
 .events .overlap-group5 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  justify-content: flex-end;
   background-color: var(--white);
   box-shadow: 0px 4px 4px #00000040;
   height: 107px;
-  position: relative;
   width: 375px;
 }
 
@@ -833,18 +839,7 @@
   width: 1px;
 }
 
-.events .overlap-group2 {
-  align-items: flex-start;
-  background-color: var(--white);
-  box-shadow: 0px 4px 4px #00000040;
-  display: flex;
-  flex-direction: column;
-  left: 0;
-  min-height: 107px;
-  position: absolute;
-  top: 0;
-  width: 375px;
-}
+
 
 .events .overlap-group3 {
   height: 44px;
@@ -927,12 +922,29 @@
   display: flex;
   flex-direction: column;
   margin-right: 3.0px;
-  margin-top: 11px;
+  margin-top: 0px;
   min-height: 253px;
   width: 328px;
   z-index: 2;
 }
 
+.btn-group button {
+  background-color: #F2A754;
+  font-size: 16px;
+  padding: 24px;
+  cursor: pointer; 
+  margin-top: 30px;
+  width: 328px;
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none;
+}
+
+.btn-group button:hover {
+  background-color: #F21D43;
+}
 .events .overlap-group-container {
   height: 58px;
   margin-top: 10px;
@@ -945,7 +957,7 @@
   background-image: url(../img/rectangle-22@2x.png);
   background-size: 100% 100%;
   display: flex;
-  height: 58px;
+  height: 108px;
   justify-content: flex-end;
   left: 0;
   min-width: 328px;
@@ -971,15 +983,7 @@
   transform: rotate(-179.97deg);
 }
 
-.events .oval-1 {
-  background-color: var(--red);
-  border-radius: 19.15px/16px;
-  height: 32px;
-  margin-left: -37px;
-  margin-top: -30.99px;
-  transform: rotate(179.97deg);
-  width: 38px;
-}
+
 
 .events .shape-1 {
   align-self: flex-end;
@@ -990,20 +994,20 @@
 }
 
 .events .overlap-group1-1 {
+  align-self: center;
   align-items: flex-start;
-  background-image: url(../img/rectangle-22@2x.png);
-  background-size: 100% 100%;
   display: flex;
-  height: 58px;
+  height: 80px;
   justify-content: flex-end;
-  left: 0;
-  min-width: 328px;
-  padding: 3px 15.9px;
-  position: absolute;
+  right: 30px;
+  padding: 3px 10px;
+  position: relative;
   top: 0;
 }
 
 .events .continue-1 {
+  align-items: flex-start;
+  align-self: center;
   height: 20px;
   letter-spacing: 1.00px;
   margin-top: 6px;
@@ -1011,16 +1015,6 @@
   width: 171px;
 }
 
-.events .overlap-group-4 {
-  align-items: flex-start;
-  background-color: var(--red);
-  border-radius: 19.15px/16px;
-  display: flex;
-  height: 32px;
-  margin-left: 23px;
-  min-width: 38px;
-  padding: 7.6px 12.0px;
-}
 
 .events .shape-2 {
   height: 16px;
@@ -1034,29 +1028,8 @@
   width: 328px;
 }
 
-.events .overlap-group-5 {
-  align-items: flex-start;
-  background-image: url(../img/rectangle-20@2x.png);
-  background-size: 100% 100%;
-  display: flex;
-  height: 58px;
-  justify-content: flex-end;
-  left: 0;
-  min-width: 328px;
-  padding: 4.0px 16.9px;
-  position: absolute;
-  top: 0;
-}
 
-.events .oval-2 {
-  background-color: var(--sandy-brown);
-  border-radius: 19.15px/16px;
-  height: 32px;
-  margin-left: -37px;
-  margin-top: -30.99px;
-  transform: rotate(179.97deg);
-  width: 38px;
-}
+
 
 .events .overlap-group1-2 {
   align-items: flex-start;
@@ -1072,16 +1045,6 @@
   top: 0;
 }
 
-.events .overlap-group-6 {
-  align-items: flex-start;
-  background-color: var(--sandy-brown);
-  border-radius: 19.15px/16px;
-  display: flex;
-  height: 32px;
-  margin-left: 23px;
-  min-width: 38px;
-  padding: 7.6px 12.0px;
-}
 
 .events .overlap-group-container-2 {
   height: 58px;
@@ -1104,16 +1067,6 @@
   top: 0;
 }
 
-.events .oval-3 {
-  background-color: var(--downy);
-  border-radius: 19.15px/16px;
-  height: 32px;
-  margin-left: -37px;
-  margin-top: -30.99px;
-  transform: rotate(179.97deg);
-  width: 38px;
-}
-
 .events .overlap-group-8 {
   align-items: flex-start;
   background-image: url(../img/rectangle-19@2x.png);
@@ -1128,16 +1081,6 @@
   top: 0;
 }
 
-.events .group-4-1 {
-  align-items: flex-start;
-  background-color: var(--downy);
-  border-radius: 18.15px/15px;
-  display: flex;
-  height: 30px;
-  margin-left: 23px;
-  min-width: 36px;
-  padding: 6.6px 11.0px;
-}
 
 .events .group-34118 {
   align-items: flex-start;
@@ -1166,8 +1109,9 @@
 }
 
 .events .group-34082 {
-  height: 111px;
-  left: 4px;
+  height: 123px;
+  margin-top: 120px;
+  left: 0px;
   position: absolute;
   top: 41px;
   width: 375px;
